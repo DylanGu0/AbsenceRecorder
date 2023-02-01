@@ -13,7 +13,7 @@ class Student {
     let birthday: Date
     
     init(forename: String, surname: String, birthday: Date) {
-        self.forename = forname
+        self.forename = forename
         self.surname = surname
         self.birthday = birthday
     }
