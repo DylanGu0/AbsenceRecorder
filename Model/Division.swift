@@ -7,14 +7,18 @@
 
 import Foundation
 
-class Division {
+class Division: Codable {
     let code: String
     var students: [Student] = []
+    var absences: [Absence] = []
     
     init(code:String) {
         self.code = code
     }
     
+    func getAbsence(for date: Date) -> Absence? {
+        return absences.first
+    }
     #if DEBUG
     static func createDivision(code: String, of size: Int) -> Division {
         let division = Division(code: code)
