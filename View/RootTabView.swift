@@ -15,7 +15,6 @@ struct RootTabView: View {
                     Image(systemName: "square.and.pencil")
                     Text("Absences")
                 }
-            AbsenceView(division: Division.examples[0])
             StatisticsView()
                 .tabItem {
                     Image(systemName: "chat.pie")

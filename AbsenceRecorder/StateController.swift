@@ -11,8 +11,7 @@ class StateController: ObservableObject {
     @Published var divisions: [Division] = []
     
     init() {
-        division = Divisions.examples
-        //loadFromFile()
+        loadFromFile()
     }
     
     func createFilePath(name: String) -> URL {
